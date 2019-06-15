@@ -1,2 +1,2 @@
 # DataStructures
-Data Strructures and algorithm practice
+Data Structures and algorithm practice
