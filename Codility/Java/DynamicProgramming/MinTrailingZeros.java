@@ -14,6 +14,9 @@ class MinTrailingZeros {
         for(i=0;i<n;i++){
             for(j=0;j<n;j++){
                 min = Integer.MAX_VALUE;
+                if(i == 0 && j ==0 ){
+                    min = trailZeros(A[i][j]);     
+                }
                 T[i][j] = trailZeros(A[i][j]);
                 P[i][j] = A[i][j];
                 if((i-1)>=0){
