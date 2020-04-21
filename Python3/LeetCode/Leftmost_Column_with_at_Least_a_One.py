@@ -7,7 +7,23 @@
 #    def dimensions(self) -> list[]:
 
 class Solution:
-    def leftMostColumnWithOne(self, binaryMatrix: 'BinaryMatrix') -> int:
+
+    def leftMostColumnWithOne_v2(self, binaryMatrix: 'BinaryMatrix') -> int:
+        dimension = binaryMatrix.dimensions()
+        row, col = dimension[0], dimension[1]
+        
+        i, j = 0, col-1
+        mincol = col
+        while i < row and j >= 0:
+            if binaryMatrix.get(i,j) == 0:
+                i += 1
+            elif binaryMatrix.get(i,j) == 1:
+                mincol = min(j, mincol)
+                j-=1
+        return -1 if (col == mincol) else mincol
+
+
+    def leftMostColumnWithOne_v1(self, binaryMatrix: 'BinaryMatrix') -> int:
         dimension = binaryMatrix.dimensions()
         row = dimension[0]
         col = dimension[1]
