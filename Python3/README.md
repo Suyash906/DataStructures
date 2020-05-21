@@ -1,3 +1,41 @@
+### String Functions
+- **capitalize()** - Capitalize first charatcter
+```
+s = "sector seven"
+res = s.capitalize()
+print(res) # Sector seven
+```
+- **count()** - Return the number of times the value "apple" appears in the string:
+```
+txt = "I love apples, apple are my favorite fruit"
+x = txt.count("apple")
+print(x) # 2
+```
+- **upper()** - Convert string to upper case
+```
+txt = "Hello my friends"
+x = txt.upper()
+print(x) # HELLO MY FRIENDS
+```
+- **isupper()** - checks if string is in upper case
+```
+txt = "THIS IS NOW!"
+x = txt.isupper()
+print(x) # True
+```
+- **replace()** - Replace the word
+```
+txt = "I like bananas"
+x = txt.replace("bananas", "apples")
+print(x) # I like apples
+```
+- **join()** - Join all items of a tuple or a list
+```
+myTuple = ("John", "Peter", "Vicky")
+x = "&".join(myTuple)
+print(x) # John&Peter&Vicky
+```
+- ****
 ### Factorial
 ```
 def findFactorial(n):
