@@ -35,7 +35,6 @@ myTuple = ("John", "Peter", "Vicky")
 x = "&".join(myTuple)
 print(x) # John&Peter&Vicky
 ```
-- ****
 ### Factorial
 ```
 def findFactorial(n):
