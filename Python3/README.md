@@ -7,7 +7,7 @@ def findFactorial(n):
     return factorial
 ```
 
-### Fibinacci
+### Fibonacci
 ```
 def printFibonacci(n):
     if n <= 0:
@@ -47,3 +47,37 @@ def replaceFirstOccurenceString(input, search_char, replace_char):
             result += char
     return result
 ```
+
+### Reverse String
+```
+def reverseString(s):
+    end = len(s)-1
+    reversed_string = ''
+
+    while end >=0:
+        reversed_string += s[end]
+        end-=1
+    return reversed_string
+```
+### Reverse String - Easy
+```
+def reverseStringEasy(s):
+    reversed_string = ''
+    for char in reversed(s):
+        reversed_string+=char
+    return reversed_string
+```
+
+### Reverse String - Leetcode
+```
+def reverseStringLeetCode(s):
+    start = 0
+    end = len(s)-1
+    while start < end:
+        s[start],s[end] = s[end], s[start]
+        start+=1
+        end -=1
+    return s
+```
+
+
