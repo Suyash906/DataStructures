@@ -1,4 +1,10 @@
 ### String Functions
+- **find()** - Where in the text is the word "welcome"?:
+```
+txt = "Hello, welcome to my world."
+x = txt.find("welcome")
+print(x) # 7
+```
 - **capitalize()** - Capitalize first charatcter
 ```
 s = "sector seven"
