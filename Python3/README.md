@@ -1,3 +1,26 @@
+### Sort a list
+```
+dictionary = {'c': 3, 'b': 3, 'aa': 2, 'a': 2, 'x':5}
+
+## sort by frequency
+sorted_dictionary = sorted(dictionary, key=lambda key:-dictionary[key])
+print(sorted_dictionary)  # ['x', 'c', 'b', 'aa', 'a']
+
+## sort in lexicographical
+sorted_dictionary = sorted(dictionary, key=lambda key:key)
+print(sorted_dictionary) # ['a', 'aa', 'b', 'c', 'x']
+
+## sort by frequency and then lexicographicaly 
+sorted_dictionary = sorted(dictionary, key=lambda key: (-dictionary[key], key))
+
+print(sorted_dictionary) # ['x', 'b', 'c', 'a', 'aa']
+ 
+## sort lexicographicaly and then by frequency 
+sorted_dictionary = sorted(dictionary, key=lambda key: (key, -dictionary[key]))
+
+print(sorted_dictionary) # ['a', 'aa', 'b', 'c', 'x']
+```
+
 ### String Functions
 - **find()** - Where in the text is the word "welcome"?:
 ```
