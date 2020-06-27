@@ -1,3 +1,16 @@
+### Glocal variable(nonlocal)
+```
+def outside():
+  x = 0
+  def inside():
+    nonlocal x
+    x+=1
+    print(x) # 1
+  inside()
+  x+=1
+  print(x) # 2
+outside()
+```
 ### Sort a list
 ```
 dictionary = {'c': 3, 'b': 3, 'aa': 2, 'a': 2, 'x':5}
