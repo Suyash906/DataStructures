@@ -1,3 +1,16 @@
+### Process Input
+```
+import re
+def process_input(s):
+  s = s.strip()
+  s = re.split(' +', s)
+  return s
+
+s = '   63 41    92  81            69  70   '
+x = process_input(s)
+print(x)
+```
+
 ### Glocal variable(nonlocal)
 ```
 def outside():
