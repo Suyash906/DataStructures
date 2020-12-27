@@ -1,5 +1,5 @@
 ### Process Input
-```
+```python
 import re
 def process_input(s):
   s = s.strip()
@@ -12,7 +12,7 @@ print(x)
 ```
 
 ### Glocal variable(nonlocal)
-```
+```python
 def outside():
   x = 0
   def inside():
@@ -25,7 +25,7 @@ def outside():
 outside()
 ```
 ### Sort a list
-```
+```python
 dictionary = {'c': 3, 'b': 3, 'aa': 2, 'a': 2, 'x':5}
 
 ## sort by frequency
@@ -49,49 +49,49 @@ print(sorted_dictionary) # ['a', 'aa', 'b', 'c', 'x']
 
 ### String Functions
 - **find()** - Where in the text is the word "welcome"?:
-```
+```python
 txt = "Hello, welcome to my world."
 x = txt.find("welcome")
 print(x) # 7
 ```
 - **capitalize()** - Capitalize first charatcter
-```
+```python
 s = "sector seven"
 res = s.capitalize()
 print(res) # Sector seven
 ```
 - **count()** - Return the number of times the value "apple" appears in the string:
-```
+```python
 txt = "I love apples, apple are my favorite fruit"
 x = txt.count("apple")
 print(x) # 2
 ```
 - **upper()** - Convert string to upper case
-```
+```python
 txt = "Hello my friends"
 x = txt.upper()
 print(x) # HELLO MY FRIENDS
 ```
 - **isupper()** - checks if string is in upper case
-```
+```python
 txt = "THIS IS NOW!"
 x = txt.isupper()
 print(x) # True
 ```
 - **replace()** - Replace the word
-```
+```python
 txt = "I like bananas"
 x = txt.replace("bananas", "apples")
 print(x) # I like apples
 ```
 - **join()** - Join all items of a tuple or a list
-```
+```python
 myTuple = ("John", "Peter", "Vicky")
 x = "&".join(myTuple)
 print(x) # John&Peter&Vicky
 ```
 ### Factorial
-```
+```python
 def findFactorial(n):
     factorial = 1
     for i in range(1,n+1):
@@ -100,7 +100,7 @@ def findFactorial(n):
 ```
 
 ### Fibonacci
-```
+```python
 def printFibonacci(n):
     if n <= 0:
         return []
@@ -115,7 +115,7 @@ def printFibonacci(n):
     return fib
 ```
 ### Replace all occurences of a single character in a string
-```
+```python
 def replaceString(input, search_char, replace_char):
     result = ''
     for char in input:
@@ -127,7 +127,7 @@ def replaceString(input, search_char, replace_char):
 ```
 
 ### Replace only first occurence of the a single character in a string
-```
+```python
 def replaceFirstOccurenceString(input, search_char, replace_char):
     result = ''
     first_char_replaced = False
@@ -141,7 +141,7 @@ def replaceFirstOccurenceString(input, search_char, replace_char):
 ```
 
 ### Reverse String
-```
+```python
 def reverseString(s):
     end = len(s)-1
     reversed_string = ''
@@ -152,7 +152,7 @@ def reverseString(s):
     return reversed_string
 ```
 ### Reverse String - Easy
-```
+```python
 def reverseStringEasy(s):
     reversed_string = ''
     for char in reversed(s):
@@ -161,7 +161,7 @@ def reverseStringEasy(s):
 ```
 
 ### Reverse String - Leetcode
-```
+```python
 def reverseStringLeetCode(s):
     start = 0
     end = len(s)-1
