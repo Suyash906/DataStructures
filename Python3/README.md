@@ -1,3 +1,22 @@
+### Python Generators
+```python
+def foo():
+    for i in range(10):
+        yield i
+
+x = foo()
+
+## first 3 values
+print('  first 3 values  ')
+for i in range(3):
+    print(x.__next__())
+
+print('  next 3 values  ')
+## next 3 values
+for i in range(3):
+    print(x.__next__())
+```
+
 ### Process Input
 ```python
 import re
