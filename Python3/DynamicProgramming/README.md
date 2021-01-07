@@ -1,5 +1,5 @@
 ### Coin Change
-```
+```python
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
         if amount<0:return 0
@@ -22,7 +22,7 @@ class Solution:
         res = dp[len(coins)][amount]
         return res if res != INFINITY else -1
 ```
-```
+```python
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
         if amount == 0:return 0
@@ -45,7 +45,7 @@ class Solution:
 ---
 
 ### Coin Change - 2
-```
+```python
 class Solution:
     def change(self, amount: int, coins: List[int]) -> int:
         dp = [[0 for col in range(amount+1)] for row in range(len(coins)+1)]
@@ -66,7 +66,7 @@ class Solution:
 ---
 
 ### Regular Expression Match
-```
+```python
 class Solution:
     def isMatch(self, s: str, p: str) -> bool:
         dp  = [[False for col in range(len(p)+1)] for row in range(len(s)+1)]
@@ -98,7 +98,7 @@ class Solution:
 ---
 
 ### Wildcard Matching
-```
+```python
 class Solution:
     def isMatch(self, s: str, p: str) -> bool:
         
@@ -131,7 +131,7 @@ class Solution:
 ---
 
 ### Knight Probablity in ChessBoard
-```
+```python
 class Solution:
     def knightProbability(self, N: int, K: int, r: int, c: int) -> float:
         
@@ -159,7 +159,7 @@ class Solution:
 ---
 
 ### Knight Dialer
-```
+```python
 class Solution(object):
     def knightDialer(self, N):
         MOD = 10**9 + 7
@@ -178,7 +178,7 @@ class Solution(object):
 ```
 ---
 ### Buy and Sell Stock
-```
+```python
 class Solution {
     public int maxProfit(int[] prices) {
         int len = prices.length;
@@ -198,7 +198,7 @@ class Solution {
 ```
 
 ### Buy and sell stock ii
-```
+```python
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         if not prices:return 0
@@ -222,7 +222,7 @@ class Solution:
 ```
 
 ### Buy and sell stock iv
-```
+```python
     public int maxProfitSlowSolution(int prices[], int K) {
         if (K == 0 || prices.length == 0) {
             return 0;
@@ -244,7 +244,7 @@ class Solution:
 ```
 ---
 ### Egg Dropping
-```
+```python
     public int calculate(int eggs, int floors){
         
         int T[][] = new int[eggs+1][floors+1];
@@ -270,7 +270,7 @@ class Solution:
 ---
 
 ### Longest Increasing Subsequence
-```
+```python
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         if not nums:return 0
