@@ -1,3 +1,35 @@
+### Python Compare dict
+```python
+import json
+
+def compare_dict(ob1, ob2):
+    if not ob1 and not ob2:
+        return True
+    
+    if type(ob1) != type(ob2):
+        return False
+    
+    
+    if isinstance(ob1, dict):
+        if len(ob1) != len(ob2):
+            return False
+        for key in ob1:
+            if key not in ob2:
+                return False
+            if not compare_dict(ob1[key], ob2[key]):
+                return False
+    elif isinstance(ob1, list):
+        if len(ob1) != len(ob2):
+            return False
+        for i in range(len(ob1)):
+            if not compare_dict(ob1[i], ob2[i]):
+                return False
+    else:
+        return ob1 == ob2
+
+
+    return True
+```
 ### Python API Request Handling
 ```python
 import requests
